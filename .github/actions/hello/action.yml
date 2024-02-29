@@ -7,8 +7,8 @@ inputs:
     default: 'World'
 outputs:
   random-number:
-  description: "Random number"
-  value: ${{ steps.random-number-generator.outputs.random-id }}
+    description: "Random number"
+    value: ${{ steps.random-number-generator.outputs.random-id }}
 runs:
   using: "composite"
   steps:
